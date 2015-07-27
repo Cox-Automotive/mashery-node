@@ -6,7 +6,7 @@ Node.js client for the Mashery REST API (v3).
 Install the module with `npm install masherynode -g`
 
 
-```
+```javascript
 var mashery = require('mashery');
 
 // initialize the API client
