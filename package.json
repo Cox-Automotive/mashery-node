@@ -1,6 +1,6 @@
 {
   "name": "mashery-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client for interacting with the Mashery V3 REST API.",
   "homepage": "https://github.com/Cox-Automotive/mashery",
   "main": "lib/mashery.js",
