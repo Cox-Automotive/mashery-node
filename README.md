@@ -116,33 +116,19 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 | createPlanMethod | packageId, planId, serviceId, endpointId | 
 
 ### Domains
-[Domains Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains)
 
-| Method | Args |
-| ------ | ---- |
-| fetchAllDomains | | 
+
+| Method | Args | Documentation |
+| ------ | ---- | ---|
+| fetchAllDomains |  | [Domains](http://support.mashery.com/docs/read/mashery_api/30/resources/domains) |
 | fetchDomain | | 
 | createDomain | | 
-
-
-[Public Domains Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public)
-
-| Method | Args |
-| ------ | ---- |
-| fetchPublicDomains | | 
-
-
-[FQDN Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public/hostnames)
-
-| Method | Args |
-| ------ | ---- |
-| fetchPublicDomainFQDNs | | 
-
-[System Domain Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/system)
-
-| Method | Args |
-| ------ | ---- |
-| fetchSystemDomains | | 
+|  |  |  |
+| fetchPublicDomains | | [Public Domains](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public) |
+|  |  |  |
+| fetchPublicDomainFQDNs | | [FQDN](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public/hostnames) |
+|  |  |  |
+| fetchSystemDomains | |  [System Domain](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/system) |
 
 
 ### Roles
