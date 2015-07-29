@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Cox-Automotive/mashery.svg?branch=master)](https://travis-ci.org/Cox-Automotive/mashery)
+
 # Mashery REST API Client
 
 Node.js client for the Mashery REST API (v3).
