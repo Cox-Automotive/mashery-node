@@ -42,66 +42,115 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 ## Supported Methods
 
 ### Services
-* fetchAllServices
-* fetchService
-* createService
-* updateService
-* deleteService
+[Service Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllServices | |
+| fetchService | id | 
+| createService | | 
+| updateService | id | 
+| deleteService | id | 
 
 ### Endpoints
-* fetchAllServiceEndpoints
-* fetchServiceEndpoint
-* createServiceEndpoint
-* updateServiceEndpoint
-* deleteServiceEndpoint
+[Endpoint Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllServiceEndpoints | id | 
+| fetchServiceEndpoint | serviceId, id | 
+| createServiceEndpoint | | 
+| updateServiceEndpoint | serviceId, id |
+| deleteServiceEndpoint | serviceId, id |
 
 ### Methods
-* fetchAllEndpointMethods
-* fetchEndpointMethod
-* createEndpointMethod
-* updateEndpointMethod
-* deleteEndpointMethod
+[Method Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans/services/endpoints/methods)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllEndpointMethods | serviceId, endpointId | 
+| fetchEndpointMethod | serviceId, endpointId, id | 
+| createEndpointMethod | serviceId, endpointId | 
+| updateEndpointMethod | serviceId, endpointId, id | 
+| deleteEndpointMethod | serviceId, endpointId, id | 
 
 ### Service Roles
+[Role Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/roles)
 
-* fetchAllServiceRoles
-* fetchServiceRole
-* createServiceRole
-* updateServiceRole
-* deleteServiceRole
+| Method | Args |
+| ------ | ---- |
+| fetchAllServiceRoles | id | 
+| fetchServiceRole |  serviceId, id | 
+| createServiceRole | serviceId | 
+| updateServiceRole | serviceId, id | 
+| deleteServiceRole | serviceId, id | 
 
 ### Packages
+[Package Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages)
 
-* fetchAllPackages
-* fetchPackage
-* createPackage
-* updatePackage
-* deletePackage
+| Method | Args |
+| ------ | ---- |
+| fetchAllPackages | | 
+| fetchPackage | id | 
+| createPackage | | 
+| updatePackage | | 
+| deletePackage | | 
 
 ### Plans
+[Plan Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans)
 
-* fetchAllPlans
-* fetchPlan
-* createPlan
+| Method | Args |
+| ------ | ---- |
+| fetchAllPlans | packageId | 
+| fetchPlan | packageId, id | 
+| createPlan | packageId | 
 
 ### Plan Services
-* fetchAllPlanServices
-* createPlanService
-* createPlanEndpoint
-* createPlanMethod
+[Plan Services Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans/services)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllPlanServices | packageId, planId | 
+| createPlanService | packageId, planId| 
+| createPlanEndpoint | packageId, planId, serviceId | 
+| createPlanMethod | packageId, planId, serviceId, endpointId | 
 
 ### Domains
+[Domains Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains)
 
-* fetchAllDomains
-* fetchDomain
-* createDomain
-* fetchPublicDomains
-* fetchPublicDomainFQDNs
-* fetchSystemDomains
-* fetchSystemDomainFQDNs
+| Method | Args |
+| ------ | ---- |
+| fetchAllDomains | | 
+| fetchDomain | | 
+| createDomain | | 
+
+
+[Public Domains Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public)
+
+| Method | Args |
+| ------ | ---- |
+| fetchPublicDomains | | 
+
+
+[FQDN Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public/hostnames)
+
+| Method | Args |
+| ------ | ---- |
+| fetchPublicDomainFQDNs | | 
+
+[System Domain Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/system)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSystemDomains | | 
+
 
 ### Roles
-* fetchAllRoles
+[Roles Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/roles)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllRoles | | 
 
 ##Authors
 
