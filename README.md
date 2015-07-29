@@ -74,6 +74,58 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 | updateEndpointMethod | serviceId, endpointId, id | 
 | deleteEndpointMethod | serviceId, endpointId, id | 
 
+### Response Filters
+[Response Filter Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/methods/responsefilters)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllResponseFilters | serviceId, endpointId, methodId | 
+| fetchResponseFilter | serviceId, endpointId, methodId, id | 
+| createResponseFilter | serviceId, endpointId, methodId | 
+| updateResponseFilter | serviceId, endpointId, methodId, id | 
+| deleteResponseFilter | serviceId, endpointId, methodId, id | 
+
+### Scheduled Maintenance Event
+[Scheduled Maintenance Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/scheduledmaintenanceevent)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSchedEvent | serviceId, endpointId | 
+| createSchedEvent | serviceId, endpointId | 
+| updateSchedEvent | serviceId, endpointId | 
+| deleteSchedEvent | serviceId, endpointId | 
+
+### Endpoint Cache
+[Cache Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/cache)
+
+| Method | Args |
+| ------ | ---- |
+| fetchEndpointCache | serviceId, endpointId | 
+| createEndpointCache | serviceId, endpointId | 
+| updateEndpointCache | serviceId, endpointId | 
+| deleteEndpointCache | serviceId, endpointId | 
+
+### CORS
+[CORS Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/cors)
+
+| Method | Args |
+| ------ | ---- |
+| fetchCORS | serviceId, endpointId | 
+| createCORS | serviceId, endpointId | 
+| updateCORS | serviceId, endpointId | 
+| deleteCORS | serviceId, endpointId | 
+
+### System Domain Authentication
+[CORS Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/systemdomainauthentication)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSysAuth | serviceId, endpointId | 
+| createSysAuth | serviceId, endpointId | 
+| updateSysAuth | serviceId, endpointId | 
+| deleteSysAuth | serviceId, endpointId | 
+
+
 ### Service Roles
 [Role Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/roles)
 
