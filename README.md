@@ -74,6 +74,26 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 | updateEndpointMethod | serviceId, endpointId, id | 
 | deleteEndpointMethod | serviceId, endpointId, id | 
 
+### Security Profile
+[Security Profile Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/securityprofile)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSecurityProfile | serviceId | 
+| createSecurityProfile | | 
+| updateSecurityProfile | serviceId |
+| deleteSecurityProfile | serviceId |
+
+### Security Profile - OAuth
+[Security Profile Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/securityprofile/oauth)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSecurityProfileOAuth | serviceId | 
+| createSecurityProfileOAuth | | 
+| updateSecurityProfileOAuth | serviceId |
+| deleteSecurityProfileOAuth | serviceId |
+
 ### Response Filters
 [Response Filter Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/methods/responsefilters)
 
