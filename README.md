@@ -42,66 +42,250 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 ## Supported Methods
 
 ### Services
-* fetchAllServices
-* fetchService
-* createService
-* updateService
-* deleteService
+[Service Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllServices | |
+| fetchService | id | 
+| createService | | 
+| updateService | id | 
+| deleteService | id | 
 
 ### Endpoints
-* fetchAllServiceEndpoints
-* fetchServiceEndpoint
-* createServiceEndpoint
-* updateServiceEndpoint
-* deleteServiceEndpoint
+[Endpoint Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllServiceEndpoints | id | 
+| fetchServiceEndpoint | serviceId, id | 
+| createServiceEndpoint | serviceId | 
+| updateServiceEndpoint | serviceId, id |
+| deleteServiceEndpoint | serviceId, id |
 
 ### Methods
-* fetchAllEndpointMethods
-* fetchEndpointMethod
-* createEndpointMethod
-* updateEndpointMethod
-* deleteEndpointMethod
+[Method Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans/services/endpoints/methods)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllEndpointMethods | serviceId, endpointId | 
+| fetchEndpointMethod | serviceId, endpointId, id | 
+| createEndpointMethod | serviceId, endpointId | 
+| updateEndpointMethod | serviceId, endpointId, id | 
+| deleteEndpointMethod | serviceId, endpointId, id | 
+
+### Service Cache
+[Service Cache Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/cache)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSecurityProfile | serviceId | 
+| createSecurityProfile | | 
+| updateSecurityProfile | serviceId |
+| deleteSecurityProfile | serviceId |
+
+### Service Error Sets
+[Service Error Set Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/errorsets)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllServiceErrorSets | id | 
+| fetchServiceErrorSet | serviceId, id | 
+| createServiceErrorSet | serviceId | 
+| updateServiceErrorSet | serviceId, id |
+| deleteServiceErrorSet | serviceId, id |
+
+### Service Error Set Messages
+[Service Error Set Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/errorsets/errormessages)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllErrorMessages | serviceId, errorSetId | 
+| fetchErrorMessage | serviceId, errorSetId, id | 
+| createErrorMessage | serviceId, errorSetId | 
+| updateErrorMessage | serviceId, errorSetId, id |
+| deleteErrorMessage | serviceId, errorSetId, id |
+
+### Endpoint Cache
+[Cache Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/cache)
+
+| Method | Args |
+| ------ | ---- |
+| fetchEndpointCache | serviceId, endpointId | 
+| createEndpointCache | serviceId, endpointId | 
+| updateEndpointCache | serviceId, endpointId | 
+| deleteEndpointCache | serviceId, endpointId | 
+
+### Security Profile
+[Security Profile Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/securityprofile)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSecurityProfile | serviceId | 
+| createSecurityProfile | | 
+| updateSecurityProfile | serviceId |
+| deleteSecurityProfile | serviceId |
+
+### Security Profile - OAuth
+[Security Profile Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/securityprofile/oauth)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSecurityProfileOAuth | serviceId | 
+| createSecurityProfileOAuth | | 
+| updateSecurityProfileOAuth | serviceId |
+| deleteSecurityProfileOAuth | serviceId |
+
+### Response Filters
+[Response Filter Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/methods/responsefilters)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllResponseFilters | serviceId, endpointId, methodId | 
+| fetchResponseFilter | serviceId, endpointId, methodId, id | 
+| createResponseFilter | serviceId, endpointId, methodId | 
+| updateResponseFilter | serviceId, endpointId, methodId, id | 
+| deleteResponseFilter | serviceId, endpointId, methodId, id | 
+
+### Scheduled Maintenance Event
+[Scheduled Maintenance Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/scheduledmaintenanceevent)
+
+| Method | Args |
+| ------ | ---- |
+| fetchScheduledEvent | serviceId, endpointId | 
+| createScheduledEvent | serviceId, endpointId | 
+| updateScheduledEvent | serviceId, endpointId | 
+| deleteScheduledEvent | serviceId, endpointId | 
+
+### CORS
+[CORS Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/cors)
+
+| Method | Args |
+| ------ | ---- |
+| fetchCORS | serviceId, endpointId | 
+| createCORS | serviceId, endpointId | 
+| updateCORS | serviceId, endpointId | 
+| deleteCORS | serviceId, endpointId | 
+
+### System Domain Authentication
+[CORS Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/endpoints/systemdomainauthentication)
+
+| Method | Args |
+| ------ | ---- |
+| fetchSysAuth | serviceId, endpointId | 
+| createSysAuth | serviceId, endpointId | 
+| updateSysAuth | serviceId, endpointId | 
+| deleteSysAuth | serviceId, endpointId | 
+
 
 ### Service Roles
+[Role Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/services/roles)
 
-* fetchAllServiceRoles
-* fetchServiceRole
-* createServiceRole
-* updateServiceRole
-* deleteServiceRole
+| Method | Args |
+| ------ | ---- |
+| fetchAllServiceRoles | id | 
+| fetchServiceRole |  serviceId, id | 
+| createServiceRole | serviceId | 
+| updateServiceRole | serviceId, id | 
+| deleteServiceRole | serviceId, id | 
 
 ### Packages
+[Package Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages)
 
-* fetchAllPackages
-* fetchPackage
-* createPackage
-* updatePackage
-* deletePackage
+| Method | Args |
+| ------ | ---- |
+| fetchAllPackages | | 
+| fetchPackage | id | 
+| createPackage | | 
+| updatePackage | id | 
+| deletePackage | id | 
 
 ### Plans
+[Plan Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans)
 
-* fetchAllPlans
-* fetchPlan
-* createPlan
+| Method | Args |
+| ------ | ---- |
+| fetchAllPlans | packageId | 
+| fetchPlan | packageId, id | 
+| createPlan | packageId | 
 
 ### Plan Services
-* fetchAllPlanServices
-* createPlanService
-* createPlanEndpoint
-* createPlanMethod
+[Plan Services Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans/services)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllPlanServices | packageId, planId | 
+| createPlanService | packageId, planId| 
+| createPlanEndpoint | packageId, planId, serviceId | 
+| createPlanMethod | packageId, planId, serviceId, endpointId | 
 
 ### Domains
 
-* fetchAllDomains
-* fetchDomain
-* createDomain
-* fetchPublicDomains
-* fetchPublicDomainFQDNs
-* fetchSystemDomains
-* fetchSystemDomainFQDNs
+
+| Method | Args | Documentation |
+| ------ | ---- | ---|
+| fetchAllDomains |  | [Domains](http://support.mashery.com/docs/read/mashery_api/30/resources/domains) |
+| fetchDomain | | 
+| createDomain | | 
+|  |  |  |
+| fetchPublicDomains | | [Public Domains](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public) |
+|  |  |  |
+| fetchPublicDomainFQDNs | | [FQDN](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/public/hostnames) |
+|  |  |  |
+| fetchSystemDomains | |  [System Domain](http://support.mashery.com/docs/read/mashery_api/30/resources/domains/system) |
+
 
 ### Roles
-* fetchAllRoles
+[Roles Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/roles)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllRoles | | 
+
+### Scheduled Maintenance Events
+[Scheduled Maintenance Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/scheduledmaintenanceevents)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllScheduledMaintenance | |
+| fetchScheduledMaintenance | id | 
+| createScheduledMaintenance | | 
+| updateScheduledMaintenance | id | 
+| deleteScheduledMaintenance | id | 
+
+
+### Scheduled Maintenance Event Endpoints
+[Scheduled Maintenance Endpoint Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/scheduledmaintenanceevents/endpoints)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllScheduledMaintenanceEndpoints | maintenanceId |
+| fetchScheduledMaintenanceEndpoint | maintenanceId, id | 
+| createScheduledMaintenanceEndpoint | maintenanceId | 
+| updateScheduledMaintenanceEndpoint | maintenanceId, id | 
+| deleteScheduledMaintenanceEndpoint | maintenanceId, id | 
+
+### Email Template Sets
+[Email Template Set Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/emailtemplatesets)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllEmailTemplateSets | |
+| fetchEmailTemplateSet | id | 
+| createEmailTemplateSet | | 
+| updateEmailTemplateSet | id | 
+| deleteEmailTemplateSet | id | 
+
+### Email Templates
+[Email Templates Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/emailtemplatesets/emailtemplates)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllEmailTemplates | emailSetId |
+| fetchEmailTemplate | emailSetId, id | 
+| createEmailTemplate | emailSetId | 
+| updateEmailTemplate | emailSetId, id | 
+| deleteEmailTemplate | emailSetId, id | 
 
 ##Authors
 
