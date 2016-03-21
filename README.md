@@ -13,8 +13,8 @@ var mashery = require('mashery');
 
 // initialize the API client
 var api = mashery.init({
-    user: '<user_id>,
-    pass: '<user_pass>,
+    user: '<user_id>',
+    pass: '<user_pass>',
     key: '<api_key>',
     secret: '<api_secret>',
     areaUuid: '<area_uuid>'
