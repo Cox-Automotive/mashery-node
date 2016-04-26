@@ -215,6 +215,7 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 | Method | Args |
 | ------ | ---- |
 | fetchAllPlanServices | packageId, planId | 
+| fetchAllPlanServicesForService | packageId, planId, id |
 | createPlanService | packageId, planId| 
 | createPlanEndpoint | packageId, planId, serviceId | 
 | createPlanMethod | packageId, planId, serviceId, endpointId | 
