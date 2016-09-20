@@ -200,6 +200,16 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 | updatePackage | id | 
 | deletePackage | id | 
 
+### Package Keys
+[Package Keys Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packagekeys)
+
+| Method | Args |
+| ------ | ---- |
+| fetchAllPackageKeys | | 
+| fetchPackageKey | id | 
+| updatePackageKey | id | 
+| deletePackageKey | id | 
+
 ### Plans
 [Plan Documentation](http://support.mashery.com/docs/read/mashery_api/30/resources/packages/plans)
 
@@ -296,7 +306,7 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 
 ## Copyright and license
 
-Copyright (c) 2015 Cox Automotive
+Copyright (c) 2016 Cox Automotive
 
 Licensed under the MIT License (the "License");
 you may not use this work except in compliance with the License.
