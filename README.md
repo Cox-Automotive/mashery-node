@@ -1,6 +1,6 @@
 [![NPM](https://nodei.co/npm/mashery-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mashery-client/)
 
-[![Build Status](https://travis-ci.org/Cox-Automotive/mashery.svg?branch=master)](https://travis-ci.org/Cox-Automotive/mashery)
+[![Build Status](https://travis-ci.org/Cox-Automotive/mashery-node.svg?branch=master)](https://travis-ci.org/Cox-Automotive/mashery)
 
 # Mashery REST API Client
 
@@ -300,7 +300,7 @@ apiClient.methods.createServiceEndpoint(args, function(epData, epRawResponse){
 | updateEmailTemplate | emailSetId, id | 
 | deleteEmailTemplate | emailSetId, id | 
 
-##Authors
+## Authors
 
 **Brian Antonelli**
 
